@@ -9,6 +9,7 @@ const Home = () => {
   const title = useRef(null)
   const desc = useRef(null)
   const author = useRef(null)
+  const type = useRef(null)
   const soldCount = useRef(null)
 
   const handleCreateBook = e => {
@@ -17,6 +18,7 @@ const Home = () => {
       title: title.current.value,
       desc: desc.current.value,
       author: author.current.value,
+      type: type.current.value,
       soldCount: soldCount.current.value,
     }
 
@@ -26,6 +28,7 @@ const Home = () => {
         title.current.value = ""
         desc.current.value = ""
         author.current.value = ""
+        type.current.value = ""
         soldCount.current.value = ""
       })
   }
@@ -52,6 +55,10 @@ const Home = () => {
             <div>
               <label htmlFor="Author" className="block mb-2 text-sm font-medium text-white">Author</label>
               <input ref={author} type="text" name="Author" className="block w-full p-2.5  border  rounded-lg bg-gray-700 border-gray-600 placeholder-white text-white " placeholder="Author" required />
+            </div>
+            <div>
+              <label htmlFor="Type" className="block mb-2 text-sm font-medium text-white">Type</label>
+              <input ref={author} type="type" name="Type" className="block w-full p-2.5  border  rounded-lg bg-gray-700 border-gray-600 placeholder-white text-white " placeholder="Type" required />
             </div>
             <div>
               <label htmlFor="sold" className="block mb-2 text-sm font-medium text-white">Sold Count</label>
