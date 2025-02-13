@@ -79,6 +79,7 @@ const Home = () => {
               <h3 className='text-xl font-bold pb-3 mb-1 border-gray-200 text-center'>{book.title}</h3>
               <p>{book.desc}</p>
               <p>{book.author}</p>
+              <p>{book.type}</p>
               <p className='mb-2'>Sold Count: {book.soldCount}</p>
               <button onClick={() => handleDeleteBook(book.id)} className="py-1 px-5 bg-red-600 rounded ">Delete</button>
             </div>
