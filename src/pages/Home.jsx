@@ -58,7 +58,7 @@ const Home = () => {
             </div>
             <div>
               <label htmlFor="Type" className="block mb-2 text-sm font-medium text-white">Type</label>
-              <input ref={author} type="type" name="Type" className="block w-full p-2.5  border  rounded-lg bg-gray-700 border-gray-600 placeholder-white text-white " placeholder="Type" required />
+              <input ref={type} type="type" name="Type" className="block w-full p-2.5  border  rounded-lg bg-gray-700 border-gray-600 placeholder-white text-white " placeholder="Type" required />
             </div>
             <div>
               <label htmlFor="sold" className="block mb-2 text-sm font-medium text-white">Sold Count</label>
