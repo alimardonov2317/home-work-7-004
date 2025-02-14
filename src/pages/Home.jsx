@@ -81,7 +81,7 @@ const Home = () => {
               <p>{book.author}</p>
               <p>{book.type}</p>
               <p className='mb-2'>Sold Count: {book.soldCount}</p>
-              <button onClick={() => handleDeleteBook(book.id)} className="py-1 px-5 bg-red-600 rounded ">Delete</button>
+              <button onClick={() => handleDeleteBook(book.id)} className="py-1 px-5 bg-red-600 rounded cursor-pointer">Delete</button>
             </div>
           ))
         }
